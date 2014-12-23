@@ -1,0 +1,17 @@
+Package: opendocx
+Type: Package
+Title: write to docx
+Version: 1.0.5
+Date: 2014-09-06
+Author: Alexander Walker <Alexander.Walker1989@gmail.com>
+Maintainer: Alexander Walker <Alexander.Walker1989@gmail.com>
+Description: write to docx
+License: GPL-3
+LinkingTo: Rcpp
+Imports:
+    methods,
+    Rcpp  (>= 0.11.1)
+Repository: CRAN
+VignetteBuilder: knitr
+Suggests:
+    knitr
