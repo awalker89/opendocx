@@ -45,12 +45,9 @@ saveDoc <- function(doc, file, overwrite = FALSE){
   
   if(!"Doc" %in% class(doc))
     stop("First argument must be a Workbook.")
-  
-  if(!grepl("\\.docx", file))
-    file <- paste0(file, ".docx")
-  
+    
   if(!is.logical(overwrite))
-    overwrite = FALSE
+    overwrite <- FALSE
   
   if(file.exists(file) & !overwrite)
     stop("File already exists!")
